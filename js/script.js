@@ -6,12 +6,12 @@ let doi;
 if (url.searchParams.get('in') != null) {
   doi = url.searchParams.get('in');
 } else {
-  doi = "Irna";
+  doi = "Risput";
 }
 
 let footer = document.getElementById("credit");
 footer.innerHTML = doi;
-footer.href = "https://www.instagram.com/adamukti/";
+footer.href = "https://www.instagram.com/dinurmaulanaa_/";
 
 function time() {
   var d = new Date();
@@ -59,7 +59,7 @@ function selesai() {
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
-    title: 'Hai byy!',
+    title: 'Hai Put!',
     html: `Selamat ${time()}, Kamu udah ${makan()}?`,
     timer: 2500,
     timerProgressBar: true,
@@ -99,7 +99,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                           title: 'Oh iya aku mau nanya',
                           text: 'Ada sesuatu yang lagi kamu pingin ga?',
                           showDenyButton: true,
-                          confirmButtonText: `Ada by`,
+                          confirmButtonText: `Ada sih`,
                           denyButtonText: `Ga ada ko`,
                         }).then((result) => {
                           /* Read more about isConfirmed, isDenied below */
@@ -111,7 +111,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                               showCancelButton: false,
                               inputValidator: (value) => {
                                 if (!value) {
-                                  return 'Isi dulu dong by'
+                                  return 'Isi dulu dong'
                                 }
                               }
                             }).then((result) => {
